@@ -1,0 +1,156 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	/* colors to use */
+/*	color: #4B56D2;*/
+}
+
+/* use this website for icons: https://icons8.com/icons/set/sass */
+
+body{
+	background-color: #fbfaf9;
+}
+
+/* header section */
+.header{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.header-logo{
+	font-size: 2rem;
+	color: #000;
+}
+
+.header-links{
+	display: flex;
+}
+
+.header-links a{
+	margin-left: 15px;
+	color: #000;
+}
+
+/* Links */
+.links:hover{
+	padding: 5px;
+	background-color: #4B56D2;
+	color: #ffffff;
+}
+
+/*About section*/
+.about{
+	display: flex;
+	padding: 60px;
+	align-items: center;
+}
+
+.big-logo{
+	font-size: 5rem;
+	rotate: 90deg;
+	color: #000;
+}
+
+.content-title{
+	color: #ffbf00;
+}
+
+.my-image{
+	border-radius: 20px;
+	width: 400px;
+}
+
+.my-content{
+	display: flex;
+	width: 75%;
+}
+
+/* skills section */
+
+#skills{
+	background-color: #4B56D2;
+	color: #fff;
+	padding: 60px;
+}
+
+.skills-container{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+}
+
+.skill-languages{
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 20px;
+	row-gap: 20px;
+	padding: 10px;
+}
+
+/* project section */
+
+#projects{
+	background-color: #000;
+}
+
+.projects-content{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	column-gap: 15px;
+	padding: 50px;
+}
+
+.projects-header-container{
+	padding-top: 20px;
+}
+
+.projects-header{
+	color: #ffbf00;
+	font-size: 2rem;
+	margin-left: 45px;
+}
+
+.card{
+	display: flex;
+	justify-content: center;
+	max-width: 600px;
+	padding-bottom: 25px;
+}
+
+/* change the color of the content within the card to white */
+.card *{
+	color: #fff;
+}
+
+.chevy-img{
+	border: 1px solid;
+	width: 400px;
+}
+
+.house-img{
+	border: 1px solid;
+	width: 400px;
+}
+
+.card-descript{
+}
+
+/* Contact Section */
+#contact{
+	background-color: ;
+	padding-top: 50px;
+}
+
+.header-contact{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.contact-message{
+	color: #ffbf00;
+}
