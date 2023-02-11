@@ -5,14 +5,18 @@
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
 	/* colors to use */
-/*	color: #4B56D2;*/
+	/*color: #4B56D2;*/
 }
+
 
 /* use this website for icons: https://icons8.com/icons/set/sass */
 
 body{
 	background-color: #fbfaf9;
+	/*hides the scroll horizontally*/
+	/*overflow-x: hidden;*/
 }
+
 
 /* header section */
 .header{
@@ -24,6 +28,7 @@ body{
 .header-logo{
 	font-size: 2rem;
 	color: #000;
+	/*background-color: #ffbf00;*/
 }
 
 .header-links{
@@ -37,10 +42,18 @@ body{
 
 /* Links */
 .links:hover{
-	padding: 5px;
-	background-color: #4B56D2;
-	color: #ffffff;
+	padding: 3px;
+	color: #4B56D2;
 }
+
+#menu{
+	display: none;
+}
+
+.menu-img{
+	width: 30px;
+}
+
 
 /*About section*/
 .about{
@@ -57,6 +70,7 @@ body{
 
 .content-title{
 	color: #ffbf00;
+	font-size: 4rem;
 }
 
 .my-image{
@@ -66,22 +80,33 @@ body{
 
 .my-content{
 	display: flex;
+	font-size: 1.2em;
 	width: 75%;
+	padding-top: 20px;
+	line-height: 1.8;
 }
 
 /* skills section */
-
 #skills{
 	background-color: #4B56D2;
 	color: #fff;
-	padding: 60px;
+	padding: 80px;
+	position: relative;
 }
 
 .skills-container{
 	display: flex;
 	justify-content: space-between;
 	padding-top: 15px;
+	column-gap: 15px;
 }
+
+.skills-header{
+	color: #FFBF00;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+}
+
 
 .skill-languages{
 	display: flex;
@@ -91,10 +116,19 @@ body{
 	padding: 10px;
 }
 
-/* project section */
+.skills-para{
+	font-size: 2em;
+	line-height: 1.5;
+}
 
+.skill-cards{
+	width: 120px;
+	border-radius: 5px;
+}
+
+/* project section */
 #projects{
-	background-color: #000;
+	background-color:  #222222;
 }
 
 .projects-content{
@@ -111,14 +145,15 @@ body{
 
 .projects-header{
 	color: #ffbf00;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin-left: 45px;
+	text-align: center;
 }
 
 .card{
 	display: flex;
 	justify-content: center;
-	max-width: 600px;
+	max-width: 350px;
 	padding-bottom: 25px;
 }
 
@@ -127,9 +162,57 @@ body{
 	color: #fff;
 }
 
-.chevy-img{
-	border: 1px solid;
-	width: 400px;
+.card-img{
+	height: 250px;
+	background: #000;
+	background-size: cover;
+	/*centers image*/
+	background-position: center;
+}
+
+.card-headers{
+	color: #ffbf00;
+	padding-top: 20px;
+}
+
+.card-1{
+	background-image: url("https://github.com/Mustgrind4life25/portfoliotest.github.io/blob/main/img/footlocker-email-pic.PNG?raw=true");
+	border-radius: 10px;
+}
+
+.card-2{
+	background-image: url("https://github.com/Mustgrind4life25/julianwebsite.github.io/blob/main/img/newsletter-img.PNG?raw=true");
+	border-radius: 10px;
+}
+
+.card-3{
+	background-image: url("https://github.com/Mustgrind4life25/julianwebsite.github.io/blob/main/img/chewy-pic.PNG?raw=true");
+	border-radius: 10px;
+}
+
+.card-4{
+	background-image: url("https://github.com/Mustgrind4life25/portfoliotest.github.io/blob/main/img/nike-pic-fliex.JPG?raw=true");
+	border-radius: 10px;
+}
+
+.card-5{
+	background-image: url("https://github.com/Mustgrind4life25/portfoliotest.github.io/blob/main/img/sneakercloset-img.JPG?raw=true");
+	border-radius: 10px;
+}
+
+.card-6{
+	background-image: url("https://github.com/Mustgrind4life25/julianwebsite.github.io/blob/main/img/boxing-fitness-img.PNG?raw=true");
+	border-radius: 10px;
+}
+
+.card-7{
+	background-image: url("https://github.com/Mustgrind4life25/julianwebsite.github.io/blob/main/img/sneakershops-landing1.JPG?raw=true");
+	border-radius: 10px;
+}
+
+.card-8{
+	background-image: url("https://github.com/Mustgrind4life25/julianwebsite.github.io/blob/main/img/c-and-grill.PNG?raw=true");
+	border-radius: 10px;
 }
 
 .house-img{
@@ -138,6 +221,7 @@ body{
 }
 
 .card-descript{
+	padding-top: 15px;
 }
 
 /* Contact Section */
@@ -145,12 +229,227 @@ body{
 	background-color: ;
 	padding-top: 50px;
 }
+.contact-header-container{
+/*	background-color: #fff;*/
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+}
 
 .header-contact{
-	text-align: center;
+	color: #ffbf00;
+	font-size: 4rem;
 	text-transform: uppercase;
+	margin-left: 50px;
 }
 
 .contact-message{
 	color: #ffbf00;
 }
+
+
+form{
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	column-gap: 10px;
+	row-gap: 10px;
+}
+
+input{
+	border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+
+.labels{
+	text-transform: capitalize;
+}
+
+#message{
+	border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+
+#form-submit-button{
+	background: #616ad6;
+	color: white;
+	border-style: outset;
+	border-radius: 5px;
+	border-color: #616ad6;
+	height: 40px;
+	width: 100px;
+/*	font: bold15px arial,sans-serif;*/
+	text-shadow: none;
+	text-align: center;
+	padding: 5px;
+	transition: ease-in .05s;
+}
+
+#form-submit-button:hover{
+	background-color: #FFBF00;
+	border-color: #FFBF00;
+	transform: translateY(2px);
+}
+
+form small{
+	bottom: 12px;
+	left: 17px;
+	font-size: 14px;
+	color: red;
+	text-transform: capitalize;
+}
+
+
+/*Footer Section*/
+
+#footer{
+/*	background-color: #4b56d2;*/
+	border-top: 2px solid #4b56d2;
+	padding: 20px;
+}
+
+.footer-container{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	row-gap: 40px;
+}
+
+.footer-logo{
+	color: #ffbf00;
+	margin-right: 10px;
+}
+
+.footer-links{
+	color: #000;
+	margin: 5px;
+}
+
+.copyright-content{
+	color: #000;
+}
+
+
+/* media query */
+
+@media screen and (max-width: 376px){
+
+	.content-title{
+		font-size: 3.5rem;
+	}
+	.big-logo{
+		border: 3px solid #ffbf00;
+	}
+
+	.skills-header{
+		text-align: center;
+		border: 2px solid;
+	}
+	.skills-container{
+		justify-content: center;
+		padding: 20px;
+	}
+	.header-sec{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 435px){
+	.skills-container{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+
+	.skill-cards{
+		border-radius: 30px;
+	}
+	.contact-header-container{
+		flex-wrap: wrap;
+		padding: 20px;
+	}
+	.about-content{
+		flex-wrap: wrap;
+	}
+	.header{
+		padding: 15px;
+	}
+}
+
+@media screen and (max-width: 540px){
+	.contact-header-container{
+		flex-wrap: wrap;
+	}
+
+	#menu{
+		display: inline-block;
+	}
+
+	.header-links{
+		display: none;
+		text-align: center;
+		padding-top: 15px;
+	}
+
+	/*.links{
+		transition: background-color 0.2s ease-in;
+	}*/
+
+	.links:hover{
+		background-color: #ffbf00;
+		color: #fff;
+	}
+
+	.about{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 30px;
+	}
+
+	.my-content{
+		display: inline-block;
+		line-height: 2.5;
+		padding-top: 20px;
+		width: 75%;
+	}
+
+	.big-logo{
+	 	rotate: 0deg;
+	}
+	/* has to be in media query to work with JS */
+	.active{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		column-gap: 20px;
+	}
+	.links{
+		padding: 10px;
+	}
+}
+
+
+@media screen and (max-width: 816px){
+	.skills-container{
+		flex-wrap: wrap;
+		row-gap: 20px;
+		padding: 10px;
+	}
+
+}
+
+/*
+
+experimental colors
+
+#495579 - grey/blue
+
+#65647C - grey
+
+#282A3A - blackish
+
+*/
