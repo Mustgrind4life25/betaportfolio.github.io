@@ -105,7 +105,12 @@ body{
 	color: #FFBF00;
 	text-transform: uppercase;
 	font-size: 1.1rem;
+/*	transition: transform 1s ease-in-out;*/
 }
+
+/*.skills-header:hover{
+	transform: translateX(100%);
+}*/
 
 
 .skill-languages{
@@ -114,6 +119,7 @@ body{
 	column-gap: 20px;
 	row-gap: 20px;
 	padding: 10px;
+	background-color: #222222;
 }
 
 .skills-para{
@@ -350,8 +356,8 @@ form small{
 		border: 2px solid;
 	}
 	.skills-container{
-		justify-content: center;
-		padding: 20px;
+		/*justify-content: center;
+		padding: 20px;*/
 	}
 	.header-sec{
 		display: flex;
@@ -360,10 +366,10 @@ form small{
 }
 
 @media screen and (max-width: 435px){
-	.skills-container{
+	/*.skills-container{
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	}
+	}*/
 
 	.skill-cards{
 		border-radius: 30px;
@@ -385,6 +391,10 @@ form small{
 		flex-wrap: wrap;
 	}
 
+	.header-links{
+		padding: 25px;
+	}
+
 	#menu{
 		display: inline-block;
 	}
@@ -392,22 +402,27 @@ form small{
 	.header-links{
 		display: none;
 		text-align: center;
-		padding-top: 15px;
 	}
 
-	/*.links{
-		transition: background-color 0.2s ease-in;
-	}*/
+	.links{
+		transition: background-color 0.4s ease-in;
+	}
 
 	.links:hover{
 		background-color: #ffbf00;
 		color: #fff;
 	}
 
+	#about{
+		display: flex;
+		justify-content: center;
+	}
+
 	.about{
 		display: flex;
 		flex-wrap: wrap;
 		padding: 30px;
+		align-items: center;
 	}
 
 	.my-content{
@@ -424,21 +439,26 @@ form small{
 	.active{
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		
 		column-gap: 20px;
 	}
 	.links{
-		padding: 10px;
+		padding: 5.5px;
 	}
 }
 
 
 @media screen and (max-width: 816px){
 	.skills-container{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+	}
+
+	/*.skills-container{
 		flex-wrap: wrap;
 		row-gap: 20px;
 		padding: 10px;
-	}
+	}*/
 
 }
 
